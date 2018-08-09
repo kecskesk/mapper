@@ -1,0 +1,11 @@
+
+<div style="text-align:center">
+  <h1>
+    <button (click)="start()">Start</button>
+  </h1>
+  <table *ngIf="map">
+    <tr *ngFor="let row of map">
+      <td *ngFor="let cell of row" [class.redcell]="cell.length > 0"></td>
+    </tr>
+  </table>
+</div>

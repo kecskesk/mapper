@@ -1,0 +1,9 @@
+td {
+    height: 7px;
+    width: 7px;
+    border: 1px solid black;
+}
+
+.redcell {
+    background-color: red;
+}
