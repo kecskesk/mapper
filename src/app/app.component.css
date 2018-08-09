@@ -1,9 +1,17 @@
 td {
     height: 7px;
     width: 7px;
-    border: 1px solid black;
 }
 
-.redcell {
-    background-color: red;
+table{
+  border: 1px solid black;
+}
+table td {
+  border: 1px solid black; /* Style just to show the table cell boundaries */
+}
+
+
+table.no-spacing {
+  border-spacing:0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
 }
