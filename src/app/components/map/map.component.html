@@ -1,0 +1,16 @@
+<div style="text-align:center">
+  <h1>
+    <button (click)="start()">Start</button>
+  </h1>
+  <h1>
+    <button (click)="grow()">Grow</button>
+  </h1>
+  <h1>
+    <button (click)="spread()">Spread</button>
+  </h1>
+  <table class="no-spacing" *ngIf="map">
+    <tr *ngFor="let row of map">
+      <td *ngFor="let cell of row" [style.background-color]="cell.color"></td>
+    </tr>
+  </table>
+</div>
